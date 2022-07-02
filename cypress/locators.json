@@ -1,0 +1,25 @@
+{
+  "RewardCreation": {
+    "CreateNewButton":"button[class*='ant-btn-primary']",
+    "loginUserName": "#email",
+    "loginPassword": "#password",
+    "Login": "button[type='submit']",
+    "RewardName":"input[name='name_en']",
+    "NextButton":"Next",
+    "ValidatyPeriodStartDate":"td[class*='ant-calendar-today']",
+    "ValidityPeriodEndDate":"td[class*='ant-calendar-last-day-of-month']:nth-child(1)",
+    "SaveButton":"button[type='submit']",
+    "RewardsMenu":"li[data-key='rewards']",
+    "RewardSearchBox":"input[data-testid='reward-list-searchbar']",
+    "SearchedRewardText":"table > tbody > tr",
+    "opendatecalendar":"input[class*='ant-calendar-picker-input']",
+    "typePrivate":"input[value='private']",
+    "tags":"div[data-testid='tags']",
+    "catalog":"div[data-testid='catalogs']",
+    "categories":"div[data-testid='categories']",
+    "bulkActionlink":"li[data-key='bulk_actions']",
+    "Upload_Button":"button[class*='ant-btn-primary']",
+    "Bulk_Upload_popUp":"button[class*='ant-btn-primary']:nth-child(2)",
+    "clickDragfile":".ant-upload-drag-icon"
+  }
+}

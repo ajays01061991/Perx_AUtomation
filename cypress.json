@@ -1,0 +1,11 @@
+{
+  "pageLoadTimeout": 120000,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "retries": {
+    "runMode": 1,
+    "openMode": 1
+  },
+  "viewportWidth": 1400,
+  "viewportHeight": 850
+}

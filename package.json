@@ -1,0 +1,42 @@
+{
+  "name": "PartTimeJob",
+  "version": "1.0.0",
+  "description": "Automation of Reward Creation Application",
+  "main": "index.js",
+  "scripts": {
+    "launchcypress": "./node_modules/.bin/cypress open",
+    "testcases-run": "./node_modules/.bin/cypress run --spec ./cypress/integration/RewardsCreation.feature --browser chrome",
+    "generate-allurereports": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "finaltest-allure": "npm run testcases-allure && npm run generate-allurereports"
+  },
+  "author": "Ajay Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "allure-commandline": "^2.17.2",
+    "chai": "^4.3.6",
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^1.6.2",
+    "dayjs": "^1.11.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "jsonpath": "^1.1.1",
+    "mocha": "^9.2.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3",
+    "multiple-cucumber-html-reporter": "^1.21.2",
+    "node-xlsx": "^0.17.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

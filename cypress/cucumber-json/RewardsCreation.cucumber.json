@@ -1,0 +1,113 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "To Create Rewards for Authorized user",
+    "line": 1,
+    "id": "to-create-rewards-for-authorized-user",
+    "tags": [],
+    "uri": "RewardsCreation.feature",
+    "elements": [
+      {
+        "id": "to-create-rewards-for-authorized-user;verify-csv-file-upload-and-verify-it-is-uploaded-successfully",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Verify CSV File Upload and Verify it is Uploaded Successfully",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to centerop2.0 \"https://dashboard.perxtech.io/dashboard/signin/\" page",
+            "result": {
+              "status": "passed",
+              "duration": 748000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userName",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "thao+test-qa-interview@perxtech.com",
+                      "admin1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enter valid username and password",
+            "result": {
+              "status": "passed",
+              "duration": 1052000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User is Navigated to perx Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1825000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "User Navigate to Bulk Action page",
+            "result": {
+              "status": "passed",
+              "duration": 966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "User click on Upload button",
+            "result": {
+              "status": "passed",
+              "duration": 231000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "Click to upload CSV drag container",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: reward.clickordragfile(...).attachFile is not a function\n    at loginPageAction.uploadcsvfile (https://dashboard.perxtech.io/__cypress/tests?p=cypress\\integration\\RewardsCreation.feature:299:32)\n    at Context.eval (https://dashboard.perxtech.io/__cypress/tests?p=cypress\\integration\\RewardsCreation.feature:86:16)\n    at Context.resolveAndRunStepDefinition (https://dashboard.perxtech.io/__cypress/tests?p=cypress\\integration\\RewardsCreation.feature:12790:29)\n    at Context.eval (https://dashboard.perxtech.io/__cypress/tests?p=cypress\\integration\\RewardsCreation.feature:12111:35)\nFrom previous event:\n    at Context.thenFn (https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:160452:63)\n    at Context.then (https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:160904:21)\n    at Context.<anonymous> (https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:178437:19)\n    at https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:177222:15\nFrom previous event:\n    at CommandQueue.runCommand (https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:177201:17)\n    at next (https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:177355:19)\n    at https://dashboard.perxtech.io/__cypress/runner/cypress_runner.js:177384:16"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on Upload",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
